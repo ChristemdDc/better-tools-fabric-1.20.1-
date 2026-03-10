@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "bettertools",
+  "version": "${version}",
+  "name": "Better Tools",
+  "description": "A Fabric 1.20.1 mod to configure tool properties",
+  "authors": [
+    "ChristemdDc"
+  ],
+  "contact": {
+    "sources": "https://github.com/ChristemdDc/better-tools-fabric-1.20.1-"
+  },
+  "license": "MIT",
+  "icon": "assets/bettertools/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.bettertools.BetterToolsMod"
+    ],
+    "client": [
+      "com.bettertools.BetterToolsClient"
+    ]
+  },
+  "mixins": [
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  }
+}
