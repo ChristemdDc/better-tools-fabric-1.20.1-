@@ -1,0 +1,37 @@
+{
+"schemaVersion": 1,
+"id": "bettertools",
+"version": "${version}",
+"name": "Better Tools",
+"description": "Configure tool properties: 3x3 mining, auto-smelt, and enhanced enchantments.",
+"authors": [
+"ChristemdDc"
+],
+"contact": {
+"sources": "https://github.com/ChristemdDc/better-tools-fabric-1.20.1-"
+},
+"license": "MIT",
+"icon": "assets/bettertools/icon.png",
+"environment": "*",
+"entrypoints": {
+"main": [
+"com.bettertools.BetterToolsMod"
+],
+"client": [
+"com.bettertools.client.BetterToolsClient"
+]
+},
+"mixins": [
+"bettertools.mixins.json",
+{
+"config": "bettertools.client.mixins.json",
+"environment": "client"
+}
+],
+"depends": {
+"fabricloader": ">=0.14.21",
+"minecraft": "~1.20.1",
+"java": ">=17",
+"fabric-api": "*"
+}
+}
